@@ -2,7 +2,7 @@
 #### A website for a pizza house, 2021
 #### By **Cherryl Osewe**
 ## Description
-
+A webpage for 'Le Pizzeria', a pizza house, that allows one to order pizza online and choose a system for delivery.
 ## Setup/Installation Requirements
 * Clone repository $ git clone https://github.com/CherrylOsewe/my-akan-name.git
 * Open index.html file on your text  editor of choice.
