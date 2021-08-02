@@ -1,10 +1,6 @@
 //business logic
-var pizzaSize = document.querySelector('input[name=pizzaSize]:checked');
-var pizzaCrust = document.querySelector('input[name=pizzaCrust]:checked');
-var toppings = document.querySelector('input[name=toppings]:checked');
-var pizzaDel = document.querySelector('input[name=pizzaDel]:checked');
-var address = document.getElementById("address-input");
-var pizzaNumber = document.getElementById("pizzaNumber").value;
+
+
 
 //user interface
 $(document).ready(function () {
@@ -14,7 +10,6 @@ $(document).ready(function () {
   $("form").submit(function (event) {
     event.preventDefault();
 
-
     var pizzaSize = document.querySelector('input[name=pizzaSize]:checked');
     var pizzaCrust = document.querySelector('input[name=pizzaCrust]:checked');
     var toppings = document.querySelector('input[name=toppings]:checked');
@@ -22,7 +17,8 @@ $(document).ready(function () {
     let address = document.getElementById("address-input").value;
     var pizzaNumber = document.getElementById("pizzaNumber").value;
 
-    if (delivery.checked == true) {
+    
+    if (delivery.checked == true ) {
       alert("Your pizza will be delivered to " + address)
     }
     else {
@@ -43,7 +39,14 @@ $(document).ready(function () {
     let totalAmount = ((pizzaSizeCalc + pizzaCrustCalc + toppingsCalc + pizzaDelCalc) * pizzaNumberCalc);
     console.log(totalAmount);
 
-    
-    
+    $("button").click(function () {
+      $("form").toggle();
+      $(".output").toggle();
+    });
+
+    document.getElementById("output1").innerHTML = "Your order of " + pizzaSize.id + " pizza, " + pizzaCrust.id + " crust, "
+      + " with " + toppings.id + " will be ready in 15 minutes. Thank you for buying from us"
+    document.getElementById("output2").innerHTML = "Your total is ksh. " + totalAmount
+
   });
 });
