@@ -16,17 +16,45 @@
 
   <body>
     <header class="jumbotron jumbotron">
-      <h1>LE PIZZERIA</h1>
+      <h1><strong>LE PIZZERIA</strong></h1>
     </header>
     <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore cumque
-      dignissimos, qui vitae error magni ducimus quidem quae aliquid amet.
+      At 'Le Pizzeria' we like to offer our customers a taste of the richness
+      <br />
+      of life with out exquisite and rich falvours while still ensuring to use
+      <br />
+      absolutely naural and safe produce . We know you enjoy and keep coming
+      back for more.
     </p>
+
+    <div class="row">
+      <div class="column">
+        <img src="images/pizza1.jpeg" alt="pizza" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="images/pizza2.jpeg" alt="pizza" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="images/pizza5.jpg" alt="pizza" style="width: 100%" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="images/pizza3.jpeg" alt="pizza" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="images/pizza4.jpeg" alt="pizza" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="images/pizza6.jpg" alt="pizza" style="width: 100%" />
+      </div>
+    </div>
+
     <div class="container">
       <form>
         <h2>Choose your pizza here</h2>
         <div>
-          <p>Choose your pizza size:</p>
+          <h3>Choose your pizza size:</h3>
           <input type="radio" id="small" name="pizzaSize" value="100" />
           <label for="small">small</label>
           <input type="radio" id="medium" name="pizzaSize" value="100" />
@@ -36,7 +64,7 @@
         </div>
 
         <div>
-          <p>Choose your pizza crust:</p>
+          <h3>Choose your pizza crust:</h3>
           <input type="radio" id="crispy" name="pizzaCrust" value="100" />
           <label for="crispy">crispy</label>
           <input type="radio" id="stuffed" name="pizzaCrust" value="100" />
@@ -45,30 +73,20 @@
           <label for="gluten-free">gluten-free</label>
         </div>
         <div>
-          <p>Choose your toppings:</p>
+          <h3>Choose your toppings:</h3>
           <input type="checkbox" name="toppings" id="cheese" value="100" />
           <label for="cheese">Cheese</label>
           <input type="checkbox" name="toppings" id="beef" value="100" />
           <label for="beef">Beef</label>
           <input type="checkbox" name="toppings" id="chicken" value="100" />
           <label for="chicken">Chicken</label>
-          <input
-            type="checkbox"
-            name="toppings"
-            id="mushrooms"
-            value="100"
-          />
+          <input type="checkbox" name="toppings" id="mushrooms" value="100" />
           <label for="mushrooms">Mushrooms</label>
-          <input
-            type="checkbox"
-            name="toppings"
-            id="tomatoes"
-            value="100"
-          />
+          <input type="checkbox" name="toppings" id="tomatoes" value="100" />
           <label for="tomatoes"> Tomatoes</label>
         </div>
         <div>
-          <p>How will your pizza get to you?</p>
+          <h3>How will your pizza get to you?</h3>
           <input
             type="radio"
             name="pizzaDel"
@@ -90,10 +108,10 @@
           <label for="pickup">Pick up</label>
         </div>
         <div>
-          <p>Choose number of pizzas:</p>
-          <input type="number" id="pizzaNumber" >
+          <h3>Choose number of pizzas:</h3>
+          <input type="number" id="pizzaNumber" />
         </div>
-        <br>
+        <br />
         <button type="submit">Submit</button>
       </form>
     </div>
