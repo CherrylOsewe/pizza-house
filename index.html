@@ -22,41 +22,78 @@
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore cumque
       dignissimos, qui vitae error magni ducimus quidem quae aliquid amet.
     </p>
-    <div class="container" >
-      <form action="">
+    <div class="container">
+      <form>
         <h2>Choose your pizza here</h2>
         <div>
-          <p>Choose your pizza size </p>
-          <input type="radio" id="small" name="pizzaSize" value="small" />
+          <p>Choose your pizza size:</p>
+          <input type="radio" id="small" name="pizzaSize" value="100" />
           <label for="small">small</label>
-          <input type="radio" id="medium" name="pizzaSize" value="medium" />
+          <input type="radio" id="medium" name="pizzaSize" value="100" />
           <label for="medium">medium</label>
-          <input type="radio" id="large"name="pizzaSize" value="large"/>
+          <input type="radio" id="large" name="pizzaSize" value="100" />
           <label for="large">large</label>
         </div>
 
         <div>
           <p>Choose your pizza crust:</p>
-          <input type="radio" id="crispy" name="pizzaCrust" value="crispy" />
+          <input type="radio" id="crispy" name="pizzaCrust" value="100" />
           <label for="crispy">crispy</label>
-          <input type="radio" id="stuffed" name="pizzaCrust" value="stuffed" />
+          <input type="radio" id="stuffed" name="pizzaCrust" value="100" />
           <label for="stuffed">stuffed</label>
-          <input type="radio" id="gluten-free"name="pizzaCrust" value="gluten-free"/>
+          <input type="radio" id="gluten-free" name="pizzaCrust" value="100" />
           <label for="gluten-free">gluten-free</label>
         </div>
-        <div required>
+        <div>
           <p>Choose your toppings:</p>
-          <input type="checkbox" name="cheese" id="cheese" value="cheese" >
+          <input type="checkbox" name="toppings" id="cheese" value="100" />
           <label for="cheese">Cheese</label>
-          <input type="checkbox" name="beef" id="beef" value="beef" >
+          <input type="checkbox" name="toppings" id="beef" value="100" />
           <label for="beef">Beef</label>
-          <input type="checkbox" name="chicken" id="chicken" value="chicken" >
+          <input type="checkbox" name="toppings" id="chicken" value="100" />
           <label for="chicken">Chicken</label>
-          <input type="checkbox" name="mushrooms" id="mushrooms" value="mushrooms" >
+          <input
+            type="checkbox"
+            name="toppings"
+            id="mushrooms"
+            value="100"
+          />
           <label for="mushrooms">Mushrooms</label>
-          <input type="checkbox" name="tomatoes" id="tomatoes" value="tomatoes" >
+          <input
+            type="checkbox"
+            name="toppings"
+            id="tomatoes"
+            value="100"
+          />
           <label for="tomatoes"> Tomatoes</label>
         </div>
+        <div>
+          <p>How will your pizza get to you?</p>
+          <input
+            type="radio"
+            name="pizzaDel"
+            id="delivery"
+            value="300"
+            class="clickable-delivery"
+          />
+          <label for="delivery">Delivery</label>
+
+          <input
+            class="address-showing"
+            type="text"
+            name="address"
+            id="address-input"
+            placeholder="Input your address here"
+          />
+
+          <input type="radio" name="pizzaDel" id="pickup" value="0" />
+          <label for="pickup">Pick up</label>
+        </div>
+        <div>
+          <p>Choose number of pizzas:</p>
+          <input type="number" id="pizzaNumber" >
+        </div>
+        <br>
         <button type="submit">Submit</button>
       </form>
     </div>
