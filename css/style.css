@@ -1,6 +1,34 @@
 .address-showing {
   display: none;
 }
+h1 , p{
+  text-align: center;
+}
 body {
   font-family: "Roboto", sans-serif;
+}
+.container {
+  color: white;
+  text-align: center;
+  background-image:url(../images/pexels-ana-madeleine-uribe-2762942.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  background-color: rgba(0, 0, 0, 0.596);
+  height: 500px ;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.column img{
+  padding: 40px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
