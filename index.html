@@ -12,11 +12,17 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header class="jumbotron jumbotron">
-      <h1><strong>LE PIZZERIA</strong></h1>
+      <h1><strong>L E P I Z Z E R I A</strong></h1>
     </header>
     <p>
       At 'Le Pizzeria' we like to offer our customers a taste of the richness
@@ -53,6 +59,7 @@
     <div class="container">
       <form>
         <h2>Choose your pizza here</h2>
+        <br />
         <div>
           <h3>Choose your pizza size:</h3>
           <input type="radio" id="small" name="pizzaSize" value="100" />
@@ -62,7 +69,7 @@
           <input type="radio" id="large" name="pizzaSize" value="100" />
           <label for="large">large</label>
         </div>
-
+        <br />
         <div>
           <h3>Choose your pizza crust:</h3>
           <input type="radio" id="crispy" name="pizzaCrust" value="100" />
@@ -72,6 +79,7 @@
           <input type="radio" id="gluten-free" name="pizzaCrust" value="100" />
           <label for="gluten-free">gluten-free</label>
         </div>
+        <br />
         <div>
           <h3>Choose your toppings:</h3>
           <input type="checkbox" name="toppings" id="cheese" value="100" />
@@ -85,6 +93,7 @@
           <input type="checkbox" name="toppings" id="tomatoes" value="100" />
           <label for="tomatoes"> Tomatoes</label>
         </div>
+        <br />
         <div>
           <h3>How will your pizza get to you?</h3>
           <input
@@ -108,12 +117,17 @@
           <label for="pickup">Pick up</label>
         </div>
         <div>
+          <br />
           <h3>Choose number of pizzas:</h3>
           <input type="number" id="pizzaNumber" />
         </div>
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit">Order</button>
       </form>
+      <div class="output">
+        <p id="output1"></p>
+        <p id="output2"></p>
+      </div>
     </div>
     <footer></footer>
     <script
